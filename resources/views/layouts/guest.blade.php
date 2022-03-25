@@ -7,6 +7,15 @@
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DGR3C0Y0YV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DGR3C0Y0YV');
+</script>
         <!-- Fonts -->
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
