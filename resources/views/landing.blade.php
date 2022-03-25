@@ -67,32 +67,22 @@
                 <x-jet-responsive-nav-link href="/" :active="request()->routeIs('tasks')">
                     {{ __('Features') }}
                 </x-jet-responsive-nav-link>
-                <x-jet-responsive-nav-link href="https://www.sutori.com/en/story/opentask-development--mvrQnJaFDNn4xzj5HEGHZx1F" :active="request()->routeIs('tasks')">
+                <x-jet-responsive-nav-link target="_blank" href="https://www.sutori.com/en/story/opentask-development--mvrQnJaFDNn4xzj5HEGHZx1F" :active="request()->routeIs('tasks')">
                     {{ __('Development') }}
                 </x-jet-responsive-nav-link>
-                <x-jet-responsive-nav-link href="mailto:jeremy.marple@taramandala.org" :active="request()->routeIs('tasks')">
+                <x-jet-responsive-nav-link target="_blank" href="mailto:jeremy.marple@taramandala.org" :active="request()->routeIs('tasks')">
                     {{ __('Contact Us') }}
+                </x-jet-responsive-nav-link>
+                <div style="padding-bottom:10px;"></div>
+                <hr style="padding-top:10px;">
+                <x-jet-responsive-nav-link href="/login" :active="request()->routeIs('tasks')">
+                    {{ __('Login') }}
+                </x-jet-responsive-nav-link>
+                <x-jet-responsive-nav-link href="/register" :active="request()->routeIs('tasks')">
+                    {{ __('Register') }}
                 </x-jet-responsive-nav-link>
             </div>
 
-            <!-- Responsive Settings Options -->
-            <div class="pt-4 pb-1 border-t border-gray-200">
-
-                <div class="mt-3 space-y-1">
-                    <!-- Account Management -->
-                    <x-jet-responsive-nav-link href="/tasks">
-                        {{ __('Dashboard') }}
-                    </x-jet-responsive-nav-link>
-
-                    @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
-                        <x-jet-responsive-nav-link href="{{ route('api-tokens.index') }}" :active="request()->routeIs('api-tokens.index')">
-                            {{ __('API Tokens') }}
-                        </x-jet-responsive-nav-link>
-                    @endif
-
-                    <!-- Authentication -->
-                </div>
-            </div>
         </div>
     </nav>
 
@@ -113,7 +103,7 @@
                 <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">Queue up, work on, and close out your tasks, all in one spot.</p>
 
             </dt>
-            <br>
+
         </div>
 
           <div class="relative">
@@ -129,6 +119,7 @@
             </dt>
             <dd class="mt-2 ml-16 text-base text-gray-500">Begin with straightforward, one line tasks with an optional notes appendage.</dd>
             <br>
+            <br>
         </div>
 
           <div class="relative">
@@ -137,6 +128,7 @@
             </dt>
             <dd class="mt-2 ml-16 text-base text-gray-500">Add bookmarked platforms to your tasks so that you can open them seamlessly.</dd>
             <br>
+            <br>
         </div>
 
           <div class="relative">
@@ -144,6 +136,8 @@
               <p class="ml-16 text-xl leading-6 font-medium text-gray-900">Email others when a task is complete</p>
             </dt>
             <dd class="mt-2 ml-16 text-base text-gray-500">Use highly customizable emails to alert the task giver when you have finished.</dd>
+            <br>
+            <br>
           </div>
 
           <div class="relative">
@@ -162,7 +156,7 @@
     <div class="container flex flex-wrap items-center justify-center px-4 py-8 mx-auto  lg:justify-between">
       <div class="flex flex-wrap justify-center">
         <ul class="flex space-x-4">
-          <li> &copy 2022 OpenTask</li>
+          <li> &copy 2022 Opentask</li>
         </ul>
       </div>
     </div>
