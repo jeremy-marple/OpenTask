@@ -156,7 +156,8 @@
     <div class="container flex flex-wrap items-center justify-center px-4 py-8 mx-auto  lg:justify-between">
       <div class="flex flex-wrap justify-center">
         <ul class="flex space-x-4">
-          <li> &copy Opentask&nbsp;&nbsp;|&nbsp;&nbsp;Handmade by <a href="https://twitter.com/jemarple">@jemarple</a> in Massachusetts</li>
+          <li> &copy Opentask&nbsp;&nbsp;|&nbsp;&nbsp;Handmade by <a href="https://twitter.com/jemarple">@jemarple</a> in Massachusetts&nbsp;</li>
+        @yield('counter')
         </ul>
       </div>
     </div>

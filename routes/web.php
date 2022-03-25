@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('landing');
 });
 
+Route::get('/jemarple', 'App\Http\Controllers\AdminController@index');
+
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
