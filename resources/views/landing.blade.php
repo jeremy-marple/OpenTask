@@ -15,13 +15,16 @@
                     <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
 
                         <x-jet-nav-link href="/">
+                            {{ __('Overview') }}
+                        </x-jet-nav-link>
+                        <x-jet-nav-link target="_blank" href="#">
                             {{ __('Features') }}
                         </x-jet-nav-link>
-                        <x-jet-nav-link target="_blank" href="https://www.sutori.com/en/story/opentask-development--mvrQnJaFDNn4xzj5HEGHZx1F">
-                            {{ __('Development') }}
+                        <x-jet-nav-link target="_blank" href="#">
+                            {{ __('Comparisons') }}
                         </x-jet-nav-link>
-                        <x-jet-nav-link target="_blank" href="mailto:jeremy.marple@taramandala.org">
-                            {{ __('Contact Us') }}
+                        <x-jet-nav-link target="_blank" href="https://blog.opentask.app">
+                            {{ __('Blog') }}
                         </x-jet-nav-link>
                     </div>
                 </div>
@@ -99,7 +102,7 @@
         <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
           <div class="relative h-64 w-64 flex flex-col justify-center">
             <dt>
-                <h1 style="color:#b91c1c" class="text-base text-purple-500 font-semibold tracking-wide text-2xl">Manage your tasks from start to finish</h1>
+                <h1 style="color:#b91c1c;font-size:35px!important;" class="text-base text-purple-500 font-semibold tracking-wide">Tools for the entire task</h1>
                 <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">Queue up, work on, and close out your tasks, all in one spot.</p>
 
             </dt>
@@ -156,7 +159,7 @@
     <div class="container flex flex-wrap items-center justify-center px-4 py-8 mx-auto  lg:justify-between">
       <div class="flex flex-wrap justify-center">
         <ul class="flex space-x-4">
-          <li> &copy Opentask&nbsp;&nbsp;|&nbsp;&nbsp;Handmade by <a href="https://twitter.com/jemarple">@jemarple</a> in Massachusetts&nbsp;</li>
+          <li> &copy Opentask&nbsp;&nbsp;|&nbsp;&nbsp;Made by <a href="https://twitter.com/jemarple">@jemarple</a> in Massachusetts&nbsp;</li>
         @yield('counter')
         </ul>
       </div>

@@ -13,10 +13,12 @@ class TaskController extends Controller
     public function index()
     {
         $userid = Auth::user()->id;
+        $team_id = Auth::user()->currentTeam->id;
 
         $count = Task::where('user_id', $userid)->count();
 
-        $tasks = Task::where('user_id', $userid)->orderBy('created_at', 'desc')->get();
+        $tasks = Task::where([['user_id', $userid],
+            ['team_id', $team_id]])->orderBy('created_at', 'desc')->get();
         $templates = Template::where('user_id', $userid)->orderBy('created_at', 'desc')->get();
         $contacts = Contact::where('user_id', $userid)->orderBy('created_at', 'desc')->get();
 

@@ -10,6 +10,7 @@ class AddTask extends Controller
 {
     public function addtask(Request $request){
         $user_id = Auth::user()->id;
+        $team_id = Auth::user()->currentTeam->id;
 
         $task = new Task();
         $task->title = $request->title;
@@ -18,6 +19,7 @@ class AddTask extends Controller
         $task->template = $request->template;
         $task->emailto = $request->emailto;
         $task->user_id = $user_id;
+        $task->team_id = $team_id;
 
         $task->save();
 

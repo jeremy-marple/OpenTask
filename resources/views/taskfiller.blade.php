@@ -29,6 +29,15 @@ You have {{ $counts }} open tasks
                 </svg>-->
                 <span class="ml-2 flex-1 w-0 truncate"><h4 class="text-xl leading-6 font-bold text-black-900"><a href="task/edit/{{ $task->id }}">{{ $task->title }}</a></h4>{{ $task->content }}<!--{{ $task->created_at->diffForHumans() }}--></span>
               </div>
+              <!--<div class="ml-4 flex-shrink-0">
+                <a href="deletetask/{{ $task->id }}"><button type="submit" class="group relative flex justify-center py-2 px-2 border border-transparent text-sm font-medium rounded-md text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+
+                    <svg class="flex-shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                      </svg>
+          </button></a>
+                </div>-->
               <div class="ml-4 flex-shrink-0">
               <a href="deletetask/{{ $task->id }}"><button type="submit" class="group relative flex justify-center py-2 px-2 border border-transparent text-sm font-medium rounded-md text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
 

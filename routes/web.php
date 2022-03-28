@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StripeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,3 +56,6 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/task/edit/{id}', 'App\Htt
 Route::middleware(['auth:sanctum', 'verified'])->get('/contact/edit/{id}', 'App\Http\Controllers\ContactController@editcontact');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/template/edit/{id}', 'App\Http\Controllers\TemplateController@updatetemplate');
+
+Route::get('stripe', [StripeController::class, 'stripe']);
+Route::post('stripe', [StripeController::class, 'stripePost'])->name('stripe.post');
