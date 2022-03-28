@@ -17,7 +17,7 @@ class TaskController extends Controller
 
         $count = Task::where('user_id', $userid)->count();
 
-        $tasks = Task::where([['user_id', $userid],
+        $tasks = Task::where([
             ['team_id', $team_id]])->orderBy('created_at', 'desc')->get();
         $templates = Template::where('user_id', $userid)->orderBy('created_at', 'desc')->get();
         $contacts = Contact::where('user_id', $userid)->orderBy('created_at', 'desc')->get();
